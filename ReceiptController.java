@@ -20,68 +20,128 @@ public class ReceiptController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        if (LoginController.blamp.getProductStatus()) {
-            product1.setText(LoginController.blamp.getProductName());
-            qty1.setText(Double.toString(LoginController.blamp.getProductQuantity()));
-            price1.setText(Double.toString(LoginController.blamp.getProductPrice()));
+        if (LoginController.cfairy.getProductStatus()) {
+            product1.setText(LoginController.cfairy.getProductName());
+            qty1.setText(Double.toString(LoginController.cfairy.getProductQuantity()));
+            price1.setText(Double.toString(LoginController.cfairy.getProductPrice()));
             amount1.setText(Double
-                    .toString(LoginController.blamp.getProductPrice() * LoginController.blamp.getProductQuantity()));
+                    .toString(LoginController.cfairy.getProductPrice() * LoginController.cfairy.getProductQuantity()));
 
             product1.setVisible(true);
             qty1.setVisible(true);
             price1.setVisible(true);
             amount1.setVisible(true);
 
-            item1Amount = LoginController.blamp.getProductPrice() * LoginController.blamp.getProductQuantity();
+            item1Amount = LoginController.cfairy.getProductPrice() * LoginController.cfairy.getProductQuantity();
 
         }
 
-        if (LoginController.wlamp.getProductStatus()) {
-            product2.setText(LoginController.wlamp.getProductName());
-            qty2.setText(Double.toString(LoginController.wlamp.getProductQuantity()));
-            price2.setText(Double.toString(LoginController.wlamp.getProductPrice()));
+        if (LoginController.tpolo.getProductStatus()) {
+            product2.setText(LoginController.tpolo.getProductName());
+            qty2.setText(Double.toString(LoginController.tpolo.getProductQuantity()));
+            price2.setText(Double.toString(LoginController.tpolo.getProductPrice()));
             amount2.setText(Double
-                    .toString(LoginController.wlamp.getProductPrice() * LoginController.wlamp.getProductQuantity()));
+                    .toString(LoginController.tpolo.getProductPrice() * LoginController.tpolo.getProductQuantity()));
 
             product2.setVisible(true);
             qty2.setVisible(true);
             price2.setVisible(true);
             amount2.setVisible(true);
 
-            item2Amount = LoginController.wlamp.getProductPrice() * LoginController.wlamp.getProductQuantity();
+            item2Amount = LoginController.tpolo.getProductPrice() * LoginController.tpolo.getProductQuantity();
         }
 
-        if (LoginController.clamp.getProductStatus()) {
-            product3.setText(LoginController.clamp.getProductName());
-            qty3.setText(Double.toString(LoginController.clamp.getProductQuantity()));
-            price3.setText(Double.toString(LoginController.clamp.getProductPrice()));
+        if (LoginController.Intothe90s.getProductStatus()) {
+            product3.setText(LoginController.Intothe90s.getProductName());
+            qty3.setText(Double.toString(LoginController.Intothe90s.getProductQuantity()));
+            price3.setText(Double.toString(LoginController.Intothe90s.getProductPrice()));
             amount3.setText(Double
-                    .toString(LoginController.clamp.getProductPrice() * LoginController.clamp.getProductQuantity()));
+                    .toString(LoginController.Intothe90s.getProductPrice() * LoginController.Intothe90s.getProductQuantity()));
 
             product3.setVisible(true);
             qty3.setVisible(true);
             price3.setVisible(true);
             amount3.setVisible(true);
 
-            item3Amount = LoginController.clamp.getProductPrice() * LoginController.clamp.getProductQuantity();
+            item3Amount = LoginController.Intothe90s.getProductPrice() * LoginController.Intothe90s.getProductQuantity();
 
         }
 
-        if (LoginController.bplant.getProductStatus()) {
-            product4.setText(LoginController.bplant.getProductName());
-            qty4.setText(Double.toString(LoginController.bplant.getProductQuantity()));
-            price4.setText(Double.toString(LoginController.bplant.getProductPrice()));
+        if (LoginController.lv.getProductStatus()) {
+            product4.setText(LoginController.lv.getProductName());
+            qty4.setText(Double.toString(LoginController.lv.getProductQuantity()));
+            price4.setText(Double.toString(LoginController.lv.getProductPrice()));
             amount4.setText(Double
-                    .toString(LoginController.bplant.getProductPrice() * LoginController.bplant.getProductQuantity()));
+                    .toString(LoginController.lv.getProductPrice() * LoginController.lv.getProductQuantity()));
 
             product4.setVisible(true);
             qty4.setVisible(true);
             price4.setVisible(true);
             amount4.setVisible(true);
 
-            item4Amount = LoginController.bplant.getProductPrice() * LoginController.bplant.getProductQuantity();
+            item4Amount = LoginController.lv.getProductPrice() * LoginController.lv.getProductQuantity();
 
         }
+         if (LoginController.chicRacer.getProductStatus()) {
+            product4.setText(LoginController.chicRacer.getProductName());
+            qty4.setText(Double.toString(LoginController.chicRacer.getProductQuantity()));
+            price4.setText(Double.toString(LoginController.chicRacer.getProductPrice()));
+            amount4.setText(Double
+                    .toString(LoginController.chicRacer.getProductPrice() * LoginController.chicRacer.getProductQuantity()));
+
+            product4.setVisible(true);
+            qty4.setVisible(true);
+            price4.setVisible(true);
+            amount4.setVisible(true);
+
+            item4Amount = LoginController.chicRacer.getProductPrice() * LoginController.chicRacer.getProductQuantity();
+             
+         }
+        if (LoginController.vintageReverie.getProductStatus()) {
+            product4.setText(LoginController.vintageReverie.getProductName());
+            qty4.setText(Double.toString(LoginController.vintageReverie.getProductQuantity()));
+            price4.setText(Double.toString(LoginController.vintageReverie.getProductPrice()));
+            amount4.setText(Double
+                    .toString(LoginController.vintageReverie.getProductPrice() * LoginController.vintageReverie.getProductQuantity()));
+
+            product4.setVisible(true);
+            qty4.setVisible(true);
+            price4.setVisible(true);
+            amount4.setVisible(true);
+
+            item4Amount = LoginController.vintageReverie.getProductPrice() * LoginController.vintageReverie.getProductQuantity();
+            
+         }
+        if (LoginController.styleArt.getProductStatus()) {
+            product4.setText(LoginController.styleArt.getProductName());
+            qty4.setText(Double.toString(LoginController.styleArt.getProductQuantity()));
+            price4.setText(Double.toString(LoginController.styleArt.getProductPrice()));
+            amount4.setText(Double
+                    .toString(LoginController.styleArt.getProductPrice() * LoginController.styleArt.getProductQuantity()));
+
+            product4.setVisible(true);
+            qty4.setVisible(true);
+            price4.setVisible(true);
+            amount4.setVisible(true);
+
+            item4Amount = LoginController.styleArt.getProductPrice() * LoginController.styleArt.getProductQuantity();
+            
+         }
+        if (LoginController.pandaStar.getProductStatus()) {
+            product4.setText(LoginController.pandaStar.getProductName());
+            qty4.setText(Double.toString(LoginController.pandaStar.getProductQuantity()));
+            price4.setText(Double.toString(LoginController.pandaStar.getProductPrice()));
+            amount4.setText(Double
+                    .toString(LoginController.pandaStar.getProductPrice() * LoginController.pandaStar.getProductQuantity()));
+
+            product4.setVisible(true);
+            qty4.setVisible(true);
+            price4.setVisible(true);
+            amount4.setVisible(true);
+
+            item4Amount = LoginController.pandaStar.getProductPrice() * LoginController.pandaStar.getProductQuantity();
+            
+         }
         double final_amount = item1Amount + item2Amount + item3Amount + item4Amount;
         total.setText(Double.toString(final_amount));
 

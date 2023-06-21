@@ -13,15 +13,16 @@ public class ReceiptController implements Initializable {
     double item1Amount, item2Amount, item3Amount, item4Amount;
 
     @FXML
-    Label qty1, qty2, qty3, qty4, product1, product2, product3, product4, price1, price2, price3, price4, amount1,
-            amount2,
-            amount3, amount4, total;
+    Label qty1, qty2, qty3, qty4, qty5, qty6, qty7, qty8,
+            name1, name2, name3, name4,name5, name6, name7, name8,
+            lineAmount1, lineAmount2, lineAmount3, lineAmount4, lineAmount5, lineAmount6, lineAmount7, lineAmount8,
+           amount1, amount2, amount3, amount4, total;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         if (LoginController.cfairy.getProductStatus()) {
-            product1.setText(LoginController.cfairy.getProductName());
+            name1.setText(LoginController.cfairy.getProductName());
             qty1.setText(Double.toString(LoginController.cfairy.getProductQuantity()));
             price1.setText(Double.toString(LoginController.cfairy.getProductPrice()));
             amount1.setText(Double
@@ -83,66 +84,66 @@ public class ReceiptController implements Initializable {
 
         }
          if (LoginController.chicRacer.getProductStatus()) {
-            product4.setText(LoginController.chicRacer.getProductName());
-            qty4.setText(Double.toString(LoginController.chicRacer.getProductQuantity()));
-            price4.setText(Double.toString(LoginController.chicRacer.getProductPrice()));
-            amount4.setText(Double
+            product5.setText(LoginController.chicRacer.getProductName());
+            qty5.setText(Double.toString(LoginController.chicRacer.getProductQuantity()));
+            price5.setText(Double.toString(LoginController.chicRacer.getProductPrice()));
+            amount5.setText(Double
                     .toString(LoginController.chicRacer.getProductPrice() * LoginController.chicRacer.getProductQuantity()));
 
-            product4.setVisible(true);
-            qty4.setVisible(true);
-            price4.setVisible(true);
-            amount4.setVisible(true);
+            product5.setVisible(true);
+            qty5.setVisible(true);
+            price5.setVisible(true);
+            amount5.setVisible(true);
 
-            item4Amount = LoginController.chicRacer.getProductPrice() * LoginController.chicRacer.getProductQuantity();
+            item5Amount = LoginController.chicRacer.getProductPrice() * LoginController.chicRacer.getProductQuantity();
              
          }
         if (LoginController.vintageReverie.getProductStatus()) {
-            product4.setText(LoginController.vintageReverie.getProductName());
-            qty4.setText(Double.toString(LoginController.vintageReverie.getProductQuantity()));
-            price4.setText(Double.toString(LoginController.vintageReverie.getProductPrice()));
-            amount4.setText(Double
+            product6.setText(LoginController.vintageReverie.getProductName());
+            qty6.setText(Double.toString(LoginController.vintageReverie.getProductQuantity()));
+            price6.setText(Double.toString(LoginController.vintageReverie.getProductPrice()));
+            amount6.setText(Double
                     .toString(LoginController.vintageReverie.getProductPrice() * LoginController.vintageReverie.getProductQuantity()));
 
-            product4.setVisible(true);
-            qty4.setVisible(true);
-            price4.setVisible(true);
-            amount4.setVisible(true);
+            product6.setVisible(true);
+            qty6.setVisible(true);
+            price6.setVisible(true);
+            amount6.setVisible(true);
 
-            item4Amount = LoginController.vintageReverie.getProductPrice() * LoginController.vintageReverie.getProductQuantity();
+            item6Amount = LoginController.vintageReverie.getProductPrice() * LoginController.vintageReverie.getProductQuantity();
             
          }
         if (LoginController.styleArt.getProductStatus()) {
-            product4.setText(LoginController.styleArt.getProductName());
-            qty4.setText(Double.toString(LoginController.styleArt.getProductQuantity()));
-            price4.setText(Double.toString(LoginController.styleArt.getProductPrice()));
-            amount4.setText(Double
+            product7.setText(LoginController.styleArt.getProductName());
+            qty7.setText(Double.toString(LoginController.styleArt.getProductQuantity()));
+            price7.setText(Double.toString(LoginController.styleArt.getProductPrice()));
+            amount7.setText(Double
                     .toString(LoginController.styleArt.getProductPrice() * LoginController.styleArt.getProductQuantity()));
 
-            product4.setVisible(true);
-            qty4.setVisible(true);
-            price4.setVisible(true);
-            amount4.setVisible(true);
+            product7.setVisible(true);
+            qty7.setVisible(true);
+            price7.setVisible(true);
+            amount7.setVisible(true);
 
-            item4Amount = LoginController.styleArt.getProductPrice() * LoginController.styleArt.getProductQuantity();
+            item7Amount = LoginController.styleArt.getProductPrice() * LoginController.styleArt.getProductQuantity();
             
          }
         if (LoginController.pandaStar.getProductStatus()) {
-            product4.setText(LoginController.pandaStar.getProductName());
-            qty4.setText(Double.toString(LoginController.pandaStar.getProductQuantity()));
-            price4.setText(Double.toString(LoginController.pandaStar.getProductPrice()));
-            amount4.setText(Double
+            product8.setText(LoginController.pandaStar.getProductName());
+            qty8.setText(Double.toString(LoginController.pandaStar.getProductQuantity()));
+            price8.setText(Double.toString(LoginController.pandaStar.getProductPrice()));
+            amount8.setText(Double
                     .toString(LoginController.pandaStar.getProductPrice() * LoginController.pandaStar.getProductQuantity()));
 
-            product4.setVisible(true);
-            qty4.setVisible(true);
-            price4.setVisible(true);
-            amount4.setVisible(true);
+            product8.setVisible(true);
+            qty8.setVisible(true);
+            price8.setVisible(true);
+            amount8.setVisible(true);
 
-            item4Amount = LoginController.pandaStar.getProductPrice() * LoginController.pandaStar.getProductQuantity();
+            item8Amount = LoginController.pandaStar.getProductPrice() * LoginController.pandaStar.getProductQuantity();
             
          }
-        double final_amount = item1Amount + item2Amount + item3Amount + item4Amount;
+        double final_amount = item1Amount + item2Amount + item3Amount + item4Amount + item5Amount + item6Amount + item7Amount + item8Amount;
         total.setText(Double.toString(final_amount));
 
     }
